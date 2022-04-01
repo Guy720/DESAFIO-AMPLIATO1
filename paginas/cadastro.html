@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+      <link rel="stylesheet" type="text/css" href="css/estilos.css">
+      <meta charset="utf-8">
+      <title>Cadastro</title>
+  </head>
+<body>
+    <div id="header">
+        <img id="css" src="imagens/css.png">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a id="pipe" href="#"></a></li>
+          <li><a href="perfil.html">Perfil</a>
+          <ul>
+          <li><a class="menu-button" href="login.html">Login</a></li>
+          <li><a id="pipe2" href="#"></a></li>
+          <li><a class="menu-button" href="home.html">Sair</a></li>
+        </ul>
+        </ul>
+      </li>
+   </ul>
+</div>
+    <div id="nav">
+          <a id="cadastro" href="cadastro.html">Cadastro
+             <i class="fa-solid fa-address-card"></i>
+          </a>
+      <a href="sobre.html">Sobre
+        <i class="fa-solid fa-hand-point-right"></i>
+    </a>
+  </div>
+     <div class="container">
+       <div class="home">
+          <br>
+            <div class="titulo">
+            <p>Cadastro</p>
+        </div>
+     </div> 
+        <div class="formulario">
+            <div class="conteudoFm">
+                <div id="alinhamento">
+                    <form name="cadastro" method="get" action="resultado.html" onsubmit="returnValidar()">
+                        <div id="alinhamento2">
+                            <label for="name">Nome</label>
+                            <input type="text" name="nome" id="nome" value="" required>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" value="" required>
+                          </div>
+                        <div>
+                            <label for="password">Senha</label>
+                            <input type="password" name="senha" id="senha" value="" required minlength="8" maxlength="64">
+                       </div>
+                            <label for="idade">Idade</label>
+                            <input type="number" name="idade" id="idade"required>
+                      </div>
+                          <div class="form-inline">
+                              <label for="radio">Gênero</label>
+                             <div class="input">
+                              <input type="radio" name="genero" id="masculino" value="Masculino">
+                              <label for="masculino">Masculino</label>
+                             <div>
+                              <input type="radio" name="genero" id="feminino" value="Feminino">
+                              <label for="feminino">Feminino</label>
+                            </div>
+                          <div>
+                              <input type="radio" name="genero" id="outro" value="Outro">
+                              <label for="outro">Outro</label>
+                           </div>
+                         </div>   
+                        <div>
+                            <label for="checkbox">Hobbies</label>
+                        </div>
+                          <div class="hobbie">
+                              <input type="checkbox" id="futebol" name="hobbies" value="Futebol">
+                              <label for="futebol">Futebol</label>
+                          <div>
+                              <input type="checkbox" id="pipa" name="hobbies" value="Empinar pipa">
+                              <label for="pipa">Empinar pipa</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" id="videogame" name="hobbies" value="Vídeo game">
+                            <label for="videogame">Video game</label>
+                           </div>
+                        </div>
+                          <div>
+                            <label for="select">Tipo sanguíneo:</label>
+                          </div>
+                        </div>
+                          <select name="tipo" id="tipo">
+                              <option value="">Não sei</option>
+                              <option value="A">A</option>
+                              <option value="B">B</option>
+                              <option value="AB">AB</option>
+                              <option value="O">O</option>
+                          </select>
+                            <div class="alinhamento3">
+                              <label for="msg">Fale sobre você</label>
+                              <textarea id="mensagem" value="" name="mensagem" rows="5"></textarea>
+                        </div>
+                      <div class="button">
+                          <button style="margin-right: 1595px;" id="apagar" type="reset" name="apagar">Apagar</button>
+                          <button onclick="resultado()" name="enviar" id="enviar">Enviar</button>
+                      </div>
+                    </div>
+                  </div>
+              </form>                                     
+            </div>
+          </div>  
+      <div id="footerFm">
+         <footer>
+            <div id="ampliato">
+               <div id="ampliato3">
+                 <p>Made by ampliato</p>
+                </div>
+            </div>
+        </footer> 
+      </div> 
+      <script src="https://kit.fontawesome.com/60107c5691.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/validacao-cadastro.js" defer></script>
+  </body>   
+</html>
